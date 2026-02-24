@@ -37,3 +37,5 @@ combined = pybedtools.BedTool().multi_intersect(
            i = [epithelial.fn, proximal_tube.fn, kidney.fn])
 union = combined.filter(lambda x: int(x[3]) == 3).saveas()
 union.cut(range(3)).saveas(data + "/sites-union.bed")
+
+Adding new comment
